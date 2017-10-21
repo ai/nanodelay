@@ -9,7 +9,7 @@ It is 9 times smaller than [`delay`] library.
 ```js
 const delay = require('nanodelay')
 
-delat(300).then(() => {
+delay(300).then(() => {
   // Executed after 300 milliseconds
 })
 ```
