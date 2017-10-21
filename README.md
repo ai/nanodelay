@@ -1,9 +1,9 @@
 # Nano Delay
 
 A tiny `Promise` wrapper around `setTimeout` for JavaScript.
-Returns a `Promise`, which will be resolved after a specific amount of time.
+Returns a `Promise` and resolve it after a specific amount of time.
 
-Only 31 bytes (minified and gzipped). No dependencies.
+Only 31 bytes (minified and gzipped).
 It is 9 times smaller than [`delay`] library.
 
 ```js
@@ -13,6 +13,13 @@ delat(300).then(() => {
   // Executed after 300 milliseconds
 })
 ```
+
+<a href="https://evilmartians.com/?utm_source=nanodelay">
+  <img src="https://evilmartians.com/badges/sponsored-by-evil-martians.svg"
+       alt="Sponsored by Evil Martians" width="236" height="54">
+</a>
+
+## Usage
 
 Can be used with `async`/`await` syntax as well:
 
