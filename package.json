@@ -1,7 +1,7 @@
 {
   "name": "nanodelay",
   "version": "0.0.0",
-  "description": "A tiny setTimeout for Promise",
+  "description": "A tiny (31 bytes) setTimeout for Promise",
   "keywords": [
     "promise",
     "delay",
@@ -52,7 +52,7 @@
   "size-limit": [
     {
       "path": "index.js",
-      "limit": "4 B"
+      "limit": "31 B"
     }
   ],
   "lint-staged": {
