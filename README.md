@@ -14,10 +14,13 @@ delat(300).then(() => {
 })
 ```
 
+[`delay`]: https://www.npmjs.com/package/delay
+
 <a href="https://evilmartians.com/?utm_source=nanodelay">
   <img src="https://evilmartians.com/badges/sponsored-by-evil-martians.svg"
        alt="Sponsored by Evil Martians" width="236" height="54">
 </a>
+
 
 ## Usage
 
@@ -31,7 +34,7 @@ async function foo () {
 foo()
 ```
 
-Second argument will be used in `Promise` as resolved value
+The second argument will be used in `Promise` as resolved value
 (useful to pass variables between scopes):
 
 ```js
@@ -42,5 +45,3 @@ createClient().then(client => {
   expect(client).toBeConnected()
 })
 ```
-
-[`delay`]: https://www.npmjs.com/package/delay
