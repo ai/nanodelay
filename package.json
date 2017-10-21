@@ -1,0 +1,65 @@
+{
+  "name": "nanodelay",
+  "version": "0.0.0",
+  "description": "A tiny setTimeout for Promise",
+  "keywords": [
+    "promise",
+    "delay",
+    "setTimeout",
+    "wait"
+  ],
+  "author": "Andrey Sitnik <andrey@sitnik.ru>",
+  "license": "MIT",
+  "repository": "ai/nanodelay",
+  "devDependencies": {
+    "docdash": "^0.4.0",
+    "eslint": "^4.9.0",
+    "eslint-config-logux": "^16.2.0",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-plugin-es5": "^1.1.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-jest": "^21.2.0",
+    "eslint-plugin-node": "^5.2.0",
+    "eslint-plugin-promise": "^3.6.0",
+    "eslint-plugin-security": "^1.4.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "jest": "^21.2.1",
+    "jsdoc": "^3.5.5",
+    "lint-staged": "^4.3.0",
+    "pre-commit": "^1.2.2",
+    "rimraf": "^2.6.2",
+    "size-limit": "^0.11.6",
+    "yaspeller-ci": "^0.7.0"
+  },
+  "scripts": {
+    "lint-staged": "lint-staged",
+    "spellcheck": "yarn docs && yaspeller-ci *.md docs/*.html",
+    "clean": "rimraf docs/ coverage/",
+    "docs": "jsdoc --configure .jsdocrc *.js",
+    "lint": "eslint *.js test/*.js",
+    "test": "jest --coverage && yarn lint && size-limit && yarn spellcheck"
+  },
+  "jest": {
+    "coverageThreshold": {
+      "global": {
+        "statements": 100
+      }
+    }
+  },
+  "eslintConfig": {
+    "extends": "eslint-config-logux/browser"
+  },
+  "size-limit": [
+    {
+      "path": "index.js",
+      "limit": "4 B"
+    }
+  ],
+  "lint-staged": {
+    "*.md": "yaspeller-ci",
+    "*.js": "eslint"
+  },
+  "pre-commit": [
+    "lint-staged"
+  ]
+}
