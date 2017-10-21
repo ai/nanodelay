@@ -1,7 +1,7 @@
 {
   "name": "nanodelay",
   "version": "0.0.0",
-  "description": "A tiny (31 bytes) setTimeout for Promise",
+  "description": "A tiny (31 bytes) Promise wrapper around setTimeout",
   "keywords": [
     "promise",
     "delay",
@@ -61,5 +61,8 @@
   },
   "pre-commit": [
     "lint-staged"
-  ]
+  ],
+  "dependencies": {
+    "delay": "^2.0.0"
+  }
 }

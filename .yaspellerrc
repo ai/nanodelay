@@ -9,6 +9,7 @@
     "docdash",
     "JSDoc",
     "js",
-    "nanodelay"
+    "nanodelay",
+    "gzipped"
   ]
 }
