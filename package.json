@@ -61,8 +61,5 @@
   },
   "pre-commit": [
     "lint-staged"
-  ],
-  "dependencies": {
-    "delay": "^2.0.0"
-  }
+  ]
 }
