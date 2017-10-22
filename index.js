@@ -18,8 +18,6 @@
  */
 module.exports = function (delay, value) {
   return new Promise(function (resolve) {
-    setTimeout(function () {
-      resolve(value)
-    }, delay)
+    setTimeout(resolve, delay, value)
   })
 }
