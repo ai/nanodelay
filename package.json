@@ -62,5 +62,6 @@
   },
   "pre-commit": [
     "lint-staged"
-  ]
+  ],
+  "typings": "index.d.ts"
 }
