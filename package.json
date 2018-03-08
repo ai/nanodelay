@@ -1,7 +1,7 @@
 {
   "name": "nanodelay",
   "version": "0.1.3",
-  "description": "A tiny (28 bytes) Promise wrapper around setTimeout",
+  "description": "A tiny (27 bytes) Promise wrapper around setTimeout",
   "keywords": [
     "promise",
     "delay",
@@ -13,23 +13,23 @@
   "repository": "ai/nanodelay",
   "devDependencies": {
     "docdash": "^0.4.0",
-    "eslint": "^4.12.1",
+    "eslint": "^4.18.2",
     "eslint-ci": "^0.1.1",
-    "eslint-config-logux": "^17.0.0",
-    "eslint-config-standard": "^10.2.1",
-    "eslint-plugin-es5": "^1.1.0",
-    "eslint-plugin-import": "^2.8.0",
-    "eslint-plugin-jest": "^21.4.2",
-    "eslint-plugin-node": "^5.2.1",
+    "eslint-config-logux": "^21.0.0",
+    "eslint-config-standard": "^11.0.0",
+    "eslint-plugin-es5": "^1.2.0",
+    "eslint-plugin-import": "^2.9.0",
+    "eslint-plugin-jest": "^21.13.0",
+    "eslint-plugin-node": "^6.0.1",
     "eslint-plugin-promise": "^3.6.0",
     "eslint-plugin-security": "^1.4.0",
     "eslint-plugin-standard": "^3.0.1",
-    "jest": "^21.2.1",
+    "jest": "^22.4.2",
     "jsdoc": "^3.5.5",
-    "lint-staged": "^6.0.0",
+    "lint-staged": "^7.0.0",
     "pre-commit": "^1.2.2",
     "rimraf": "^2.6.2",
-    "size-limit": "^0.13.2",
+    "size-limit": "^0.16.1",
     "yaspeller-ci": "^1.0.0"
   },
   "scripts": {
@@ -41,6 +41,7 @@
     "test": "jest --coverage && yarn lint && size-limit && yarn spellcheck"
   },
   "jest": {
+    "testEnvironment": "node",
     "coverageThreshold": {
       "global": {
         "statements": 100
@@ -53,7 +54,7 @@
   "size-limit": [
     {
       "path": "index.js",
-      "limit": "28 B"
+      "limit": "27 B"
     }
   ],
   "lint-staged": {
