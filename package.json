@@ -37,7 +37,7 @@
     "lint-staged": "lint-staged",
     "spellcheck": "yarn docs && yaspeller-ci *.md docs/*.html",
     "clean": "rimraf docs/ coverage/",
-    "docs": "jsdoc --configure .jsdocrc *.js",
+    "docs": "jsdoc -d docs *.js",
     "lint": "eslint-ci *.js test/*.js",
     "test": "jest --coverage && yarn lint && size-limit && yarn spellcheck"
   },
@@ -65,5 +65,25 @@
   "pre-commit": [
     "lint-staged"
   ],
+  "yaspeller": {
+    "lang": "en",
+    "ignoreCapitalization": true,
+    "excludeFiles": [
+      "docs/*.js.html"
+    ],
+    "dictionary": [
+      "Versioning",
+      "docdash",
+      "JSDoc",
+      "js",
+      "nanodelay",
+      "gzipped",
+      "Federico",
+      "Brigante",
+      "Danakt",
+      "GMT",
+      "Tue"
+    ]
+  },
   "typings": "index.d.ts"
 }
