@@ -13,7 +13,6 @@
   "repository": "ai/nanodelay",
   "devDependencies": {
     "clean-publish": "^1.0.7",
-    "docdash": "^0.4.0",
     "eslint": "^5.1.0",
     "eslint-ci": "^0.1.1",
     "eslint-config-logux": "^23.0.4",
@@ -73,7 +72,6 @@
     ],
     "dictionary": [
       "Versioning",
-      "docdash",
       "JSDoc",
       "js",
       "nanodelay",
