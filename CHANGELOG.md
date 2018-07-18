@@ -1,6 +1,9 @@
 # Change Log
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## 0.1.4
+* Fix JSDoc.
+
 ## 0.1.3
 * Add TypeScript definitions (by Danakt Frost).
 
