@@ -3,8 +3,8 @@
 A tiny `Promise` wrapper around `setTimeout` for JavaScript.
 Returns a `Promise` and resolve it after a specific amount of time.
 
-Only 27 bytes (minified and gzipped).
-It is 10 times smaller than [`delay`] library.
+Only **27 bytes** (minified and gzipped),
+10 times smaller than [`delay`] library.
 
 ```js
 const delay = require('nanodelay')
