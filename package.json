@@ -11,34 +11,37 @@
   "author": "Andrey Sitnik <andrey@sitnik.ru>",
   "license": "MIT",
   "repository": "ai/nanodelay",
-  "devDependencies": {
-    "clean-publish": "^1.0.7",
-    "eslint": "^5.1.0",
-    "eslint-ci": "^0.1.1",
-    "eslint-config-logux": "^23.0.4",
-    "eslint-config-standard": "^11.0.0",
-    "eslint-plugin-es5": "^1.3.1",
-    "eslint-plugin-import": "^2.13.0",
-    "eslint-plugin-jest": "^21.18.0",
-    "eslint-plugin-node": "^7.0.1",
-    "eslint-plugin-promise": "^3.8.0",
-    "eslint-plugin-security": "^1.4.0",
-    "eslint-plugin-standard": "^3.1.0",
-    "jest": "^23.4.1",
-    "jsdoc": "^3.5.5",
-    "lint-staged": "^7.2.0",
-    "pre-commit": "^1.2.2",
-    "rimraf": "^2.6.2",
-    "size-limit": "^0.18.5",
-    "yaspeller-ci": "^1.0.0"
-  },
+  "typings": "index.d.ts",
   "scripts": {
-    "lint-staged": "lint-staged",
-    "spellcheck": "yarn docs && yaspeller-ci *.md docs/*.html",
-    "clean": "rimraf docs/ coverage/",
+    "clean": "rimraf api.md coverage/",
     "docs": "jsdoc -d docs *.js",
     "lint": "eslint-ci *.js test/*.js",
-    "test": "jest --coverage && yarn lint && size-limit && yarn spellcheck"
+    "test": "jest --coverage && eslint-ci . && size-limit && yarn spell",
+    "api": "documentation build *.js -f md -o api.md",
+    "spell": "yarn api && yaspeller-ci *.md"
+  },
+  "devDependencies": {
+    "@logux/eslint-config": "^30.0.1",
+    "@logux/sharec-config": "^0.3.3",
+    "clean-publish": "^1.1.2",
+    "documentation": "^12.0.3",
+    "eslint": "^6.1.0",
+    "eslint-ci": "^1.0.0",
+    "eslint-config-standard": "^13.0.1",
+    "eslint-plugin-es5": "^1.4.1",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jest": "^22.14.0",
+    "eslint-plugin-node": "^9.1.0",
+    "eslint-plugin-prefer-let": "^1.0.1",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-security": "^1.4.0",
+    "eslint-plugin-standard": "^4.0.0",
+    "husky": "^3.0.1",
+    "jest": "^24.8.0",
+    "lint-staged": "^9.2.1",
+    "rimraf": "^2.6.3",
+    "size-limit": "^1.3.8",
+    "yaspeller-ci": "^1.0.1"
   },
   "jest": {
     "testEnvironment": "node",
@@ -49,39 +52,40 @@
     }
   },
   "eslintConfig": {
-    "extends": "eslint-config-logux/browser"
+    "extends": "@logux/eslint-config/browser"
   },
+  "eslintIgnore": [
+    "node_modules"
+  ],
   "size-limit": [
     {
       "path": "index.js",
-      "limit": "27 B"
+      "limit": "28 B"
     }
   ],
   "lint-staged": {
     "*.md": "yaspeller-ci",
     "*.js": "eslint"
   },
-  "pre-commit": [
-    "lint-staged"
-  ],
   "yaspeller": {
     "lang": "en",
     "ignoreCapitalization": true,
-    "excludeFiles": [
-      "docs/*.js.html"
+    "ignoreText": [
+      " \\(by [^)]+\\)."
     ],
     "dictionary": [
       "Versioning",
       "JSDoc",
-      "js",
       "nanodelay",
-      "gzipped",
-      "Federico",
-      "Brigante",
-      "Danakt",
-      "GMT",
-      "Tue"
+      "gzipped"
     ]
   },
-  "typings": "index.d.ts"
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "sharec": {
+    "version": "0.3.3"
+  }
 }

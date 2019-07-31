@@ -1,16 +1,14 @@
-var delay = require('../')
+let delay = require('../')
 
-it('resolves after some time', function () {
-  var now = Date.now()
-  return delay(1000).then(function () {
-    var time = Date.now() - now
-    expect(time).toBeGreaterThanOrEqual(1000)
-    expect(time).toBeLessThan(1100)
-  })
+it('resolves after some time', async () => {
+  let now = Date.now()
+  await delay(1000)
+  let diff = Date.now() - now
+  expect(diff).toBeGreaterThanOrEqual(1000)
+  expect(diff).toBeLessThan(1100)
 })
 
-it('resolves with specific result', function () {
-  return delay(1, 'foo').then(function (result) {
-    expect(result).toEqual('foo')
-  })
+it('resolves with specific result', async () => {
+  let result = await delay(1, 'foo')
+  expect(result).toEqual('foo')
 })
