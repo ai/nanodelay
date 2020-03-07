@@ -1,6 +1,6 @@
 {
   "name": "nanodelay",
-  "version": "0.1.4",
+  "version": "1.0.0",
   "description": "A tiny (25 bytes) Promise wrapper around setTimeout",
   "keywords": [
     "promise",
@@ -82,7 +82,8 @@
       "nanodelay",
       "gzipped",
       "ES",
-      "CDN"
+      "CDN",
+      "ES2016"
     ]
   },
   "husky": {

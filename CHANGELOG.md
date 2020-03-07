@@ -1,6 +1,11 @@
 # Change Log
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## 1.0
+* Add ES modules support.
+* Use ES2016 syntax.
+* Reduce size.
+
 ## 0.1.4
 * Fix JSDoc.
 
