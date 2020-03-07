@@ -17,8 +17,6 @@
  * @name nanodelay
  * @function
  */
-module.exports = function (delay, value) {
-  return new Promise(function (resolve) {
-    setTimeout(resolve, delay, value)
-  })
-}
+module.exports = (delay, value) => new Promise(resolve => {
+  setTimeout(resolve, delay, value)
+})
