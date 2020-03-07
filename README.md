@@ -3,20 +3,21 @@
 A tiny `Promise` wrapper around `setTimeout` for JavaScript.
 Returns a `Promise` and resolve it after a specific amount of time.
 
-Only **25 bytes** (minified and gzipped),
-10 times smaller than [`delay`] library.
+* Only **25 bytes** (minified and gzipped),
+  10 times smaller than [`delay`] library.
+* Has good ES modules and TypeScript support.
 
 ```js
 import { delay } from 'nanodelay'
-
-delay(300).then(() => {
-  // Executed after 300 milliseconds
-})
 
 async function foo () {
   await delay(300)
   // Executed after 300 milliseconds
 }
+
+delay(300).then(() => {
+  // Executed after 300 milliseconds
+})
 ```
 
 [`delay`]: https://github.com/sindresorhus/delay

@@ -69,14 +69,15 @@
   "yaspeller": {
     "lang": "en",
     "ignoreCapitalization": true,
+    "ignoreText": [
+      " \\(by [^)]+\\)."
+    ],
     "dictionary": [
       "Versioning",
       "JSDoc",
       "nanodelay",
-      "gzipped"
-    ],
-    "ignoreText": [
-      " \\(by [^)]+\\)."
+      "gzipped",
+      "ES"
     ]
   },
   "husky": {
