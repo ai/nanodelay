@@ -16,7 +16,7 @@
     "clean": "rimraf api.md coverage/",
     "docs": "jsdoc -d docs *.js",
     "lint": "eslint-ci *.js test/*.js",
-    "test": "jest-ci --coverage && eslint-ci . && size-limit && yarn spell",
+    "test": "jest-ci --coverage && eslint-ci . && check-dts && size-limit && yarn spell",
     "api": "documentation build *.js -f md -o api.md",
     "spell": "yarn api && yaspeller-ci *.md"
   },
@@ -25,6 +25,7 @@
     "@logux/sharec-config": "^0.5.7",
     "@size-limit/dual-publish": "^4.2.1",
     "@size-limit/preset-small-lib": "^4.2.1",
+    "check-dts": "^0.1.2",
     "documentation": "^12.1.4",
     "dual-publish": "^0.5.0",
     "eslint": "^6.8.0",
