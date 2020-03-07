@@ -16,9 +16,5 @@
  *
  * @name nanodelay
  */
-declare function delay(delay: number): Promise<void>;
-declare function delay<T>(delay: number, value: T): Promise<T>;
-
-declare module delay {}
-
-export = delay;
+export function delay(delay: number): Promise<void>
+export function delay<T>(delay: number, value: T): Promise<T>

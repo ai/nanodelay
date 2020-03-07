@@ -3,18 +3,23 @@
 A tiny `Promise` wrapper around `setTimeout` for JavaScript.
 Returns a `Promise` and resolve it after a specific amount of time.
 
-Only **29 bytes** (minified and gzipped),
+Only **25 bytes** (minified and gzipped),
 10 times smaller than [`delay`] library.
 
 ```js
-const delay = require('nanodelay')
+import { delay } from 'nanodelay'
 
 delay(300).then(() => {
   // Executed after 300 milliseconds
 })
+
+async function foo () {
+  await delay(300)
+  // Executed after 300 milliseconds
+}
 ```
 
-[`delay`]: https://www.npmjs.com/package/delay
+[`delay`]: https://github.com/sindresorhus/delay
 
 <a href="https://evilmartians.com/?utm_source=nanodelay">
   <img src="https://evilmartians.com/badges/sponsored-by-evil-martians.svg"
@@ -23,16 +28,6 @@ delay(300).then(() => {
 
 
 ## Usage
-
-Can be used with `async`/`await` syntax as well:
-
-```js
-async function foo () {
-  await delay(300)
-  // Executed after 300 milliseconds
-}
-foo()
-```
 
 The second argument will be used in `Promise` as resolved value
 (useful to pass variables between scopes):

@@ -1,7 +1,7 @@
 {
   "name": "nanodelay",
   "version": "0.1.4",
-  "description": "A tiny (29 bytes) Promise wrapper around setTimeout",
+  "description": "A tiny (25 bytes) Promise wrapper around setTimeout",
   "keywords": [
     "promise",
     "delay",
@@ -21,11 +21,12 @@
     "spell": "yarn api && yaspeller-ci *.md"
   },
   "devDependencies": {
-    "@logux/eslint-config": "^36.0.0",
+    "@logux/eslint-config": "^36.1.0",
     "@logux/sharec-config": "^0.5.7",
+    "@size-limit/dual-publish": "^4.2.1",
     "@size-limit/preset-small-lib": "^4.2.1",
-    "clean-publish": "^1.1.6",
     "documentation": "^12.1.4",
+    "dual-publish": "^0.5.0",
     "eslint": "^6.8.0",
     "eslint-ci": "^1.0.0",
     "eslint-config-standard": "^14.1.0",
@@ -59,7 +60,8 @@
   },
   "size-limit": [
     {
-      "limit": "29 B"
+      "import": "{ delay }",
+      "limit": "25 B"
     }
   ],
   "lint-staged": {
