@@ -5,8 +5,12 @@
   "keywords": [
     "promise",
     "delay",
+    "settimeout",
     "setTimeout",
-    "wait"
+    "wait",
+    "async",
+    "await",
+    "esm"
   ],
   "author": "Andrey Sitnik <andrey@sitnik.ru>",
   "license": "MIT",
@@ -77,7 +81,8 @@
       "JSDoc",
       "nanodelay",
       "gzipped",
-      "ES"
+      "ES",
+      "CDN"
     ]
   },
   "husky": {

@@ -5,7 +5,7 @@ Returns a `Promise` and resolve it after a specific amount of time.
 
 * Only **25 bytes** (minified and gzipped),
   10 times smaller than [`delay`] library.
-* Has good ES modules and TypeScript support.
+* Has good **ES modules** and **TypeScript** support.
 
 ```js
 import { delay } from 'nanodelay'
@@ -40,4 +40,10 @@ createClient().then(client => {
 }).then(client => {
   expect(client).toBeConnected()
 })
+```
+
+For quick hacks you can load Nano Delay from CDN. Do not use it in production because of low performance.
+
+```js
+import createStore from 'https://cdn.jsdelivr.net/npm/nanodelay/index.js'
 ```
