@@ -15,7 +15,8 @@
   "author": "Andrey Sitnik <andrey@sitnik.ru>",
   "license": "MIT",
   "repository": "ai/nanodelay",
-  "typings": "index.d.ts",
+  "sideEffects": false,
+  "types": "index.d.ts",
   "scripts": {
     "clean": "rimraf coverage/",
     "lint": "eslint-ci *.js test/*.js",
