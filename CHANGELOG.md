@@ -1,6 +1,9 @@
 # Change Log
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## 1.0.1
+* Mark package to be free from side effects.
+
 ## 1.0
 * Add ES modules support.
 * Use ES2016 syntax.
