@@ -45,5 +45,5 @@ createClient().then(client => {
 For quick hacks you can load Nano Delay from CDN. Do not use it in production because of low performance.
 
 ```js
-import createStore from 'https://cdn.jsdelivr.net/npm/nanodelay/index.js'
+import { delay } from 'https://cdn.jsdelivr.net/npm/nanodelay/index.js'
 ```
