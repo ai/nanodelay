@@ -1,4 +1,4 @@
-let { delay } = require('../')
+import { delay } from '../'
 
 it('resolves after some time', async () => {
   let now = Date.now()

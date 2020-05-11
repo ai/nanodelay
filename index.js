@@ -1,5 +1,6 @@
-let delay = (ms, value) => new Promise(resolve => {
-  setTimeout(resolve, ms, value)
-})
+let delay = (ms, value) =>
+  new Promise(resolve => {
+    setTimeout(resolve, ms, value)
+  })
 
 module.exports = { delay }

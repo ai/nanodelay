@@ -10,8 +10,8 @@
  * })
  * ```
  *
- * @param delay Milliseconds to wait before resolving.
+ * @param ms Milliseconds to wait before resolving.
  * @param value Argument to be resolved by this Promise.
  */
-export function delay(delay: number): Promise<void>
-export function delay<T>(delay: number, value: T): Promise<T>
+export function delay (ms: number): Promise<void>
+export function delay<T> (ms: number, value: T): Promise<T>
