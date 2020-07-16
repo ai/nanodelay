@@ -1,4 +1,4 @@
-import { delay } from '../'
+import { delay } from '../index.js'
 
 async function test () {
   await delay(500)

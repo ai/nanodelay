@@ -1,4 +1,4 @@
-import { delay } from '../'
+import { delay } from '../index.js'
 
 it('resolves after some time', async () => {
   let now = Date.now()
