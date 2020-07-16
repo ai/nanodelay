@@ -1,4 +1,4 @@
-import { delay } from '../'
+import { delay } from '../index.js'
 
 async function test () {
   // THROWS '"500"' is not assignable to parameter of type 'number'.
