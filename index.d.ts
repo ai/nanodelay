@@ -1,3 +1,8 @@
+interface Delay {
+  (ms: number): Promise<void>
+  <T>(ms: number, value: T): Promise<T>
+}
+
 /**
  * Resolves a Promise after a specified amount of time.
  *
@@ -13,5 +18,4 @@
  * @param ms Milliseconds to wait before resolving.
  * @param value Argument to be resolved by this Promise.
  */
-export function delay (ms: number): Promise<void>
-export function delay<T> (ms: number, value: T): Promise<T>
+export const delay: Delay
