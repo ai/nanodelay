@@ -1,6 +1,9 @@
 # Change Log
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## 1.0.4
+* Fixed TypeScript definitions.
+
 ## 1.0.3
 * Fix ES modules support.
 
