@@ -2,7 +2,7 @@
 This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## 1.0.5
-* Add `package.types`.
+* Added `package.types`.
 
 ## 1.0.4
 * Fixed TypeScript definitions.
