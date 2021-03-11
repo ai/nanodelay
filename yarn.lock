@@ -1754,9 +1754,9 @@ class-utils@^0.3.5:
     static-extend "^0.1.1"
 
 clean-publish@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/clean-publish/-/clean-publish-2.0.0.tgz#3291c40f9bfe6ee952cad4ae0d1d102f610fcf65"
-  integrity sha512-ue58DIKxbin8+KaRsbUoJbqbWk2YmSd2K/EEB/zSRSDKTyRRo0RvsqzNanZPk30pzqBIjRXOI5zMlDqR13U2Xg==
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/clean-publish/-/clean-publish-2.1.0.tgz#f4a913c65a1c08552a81803dd84fc2113aabe82e"
+  integrity sha512-F73wDX1bqmwU7zJQnERzCKLyz1eVxR15dD4GShfJO284rc5pIU6Mo2KAgj7OKLsDqyu6dHD47ZUm7JT2U3bhyQ==
   dependencies:
     cross-spawn "^7.0.3"
     fs-extra "^9.1.0"
