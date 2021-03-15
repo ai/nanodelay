@@ -1,8 +1,11 @@
 # Change Log
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## 1.0.8
+* Added `default` to `package.exports`.
+
 ## 1.0.7
-* Remove `ChangeLog` from package.
+* Removed `ChangeLog` from package.
 
 ## 1.0.6
 * Fixed `package.types` path.
