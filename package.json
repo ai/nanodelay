@@ -16,6 +16,9 @@
   "license": "MIT",
   "repository": "ai/nanodelay",
   "sideEffects": false,
+  "engines": {
+    "node": "^12.0.0 || ^14.0.0 || >=16.0.0"
+  },
   "type": "module",
   "types": "./index.d.ts",
   "exports": {
