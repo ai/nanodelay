@@ -51,7 +51,7 @@ import { delay } from 'https://cdn.jsdelivr.net/npm/nanodelay/index.js'
 
 ## Future
 
-Node 16+ has built-in Promise-based `setTimeout`. After January 2023
+Node.js 16+ has built-in Promise-based `setTimeout`. After January 2023
 you can remove `nanodelay` from your dependencies.
 
 ```js

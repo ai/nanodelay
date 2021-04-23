@@ -1,6 +1,6 @@
 {
   "name": "nanodelay",
-  "version": "1.0.8",
+  "version": "2.0.0",
   "description": "A tiny (25 bytes) Promise wrapper around setTimeout",
   "keywords": [
     "promise",
@@ -114,7 +114,9 @@
       "gzipped",
       "ES",
       "CDN",
-      "ES2016"
+      "ES2016",
+      "ESM",
+      "js"
     ]
   },
   "sharec": {
