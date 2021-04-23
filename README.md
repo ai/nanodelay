@@ -47,3 +47,15 @@ For quick hacks you can load Nano Delay from CDN. Do not use it in production be
 ```js
 import { delay } from 'https://cdn.jsdelivr.net/npm/nanodelay/index.js'
 ```
+
+
+## Future
+
+Node 16+ has built-in Promise-based `setTimeout`. After January 2023
+you can remove `nanodelay` from your dependencies.
+
+```js
+import { setTimeout } from 'timers/promises'
+
+await setTimeout(5000)
+```
