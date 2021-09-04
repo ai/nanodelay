@@ -1,6 +1,9 @@
 # Change Log
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## 2.0.1
+* Fixed `package.json` export.
+
 ## 2.0
 * Moved project to ESM-only type. Applications must use ESM too.
 * Dropped Node.js 10 support.
