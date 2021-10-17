@@ -1,6 +1,6 @@
 {
   "name": "nanodelay",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "A tiny (25 bytes) Promise wrapper around setTimeout",
   "keywords": [
     "promise",
