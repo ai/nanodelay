@@ -10,5 +10,5 @@ it('resolves after some time', async () => {
 
 it('resolves with specific result', async () => {
   let result = await delay(1, 'foo')
-  expect(result).toEqual('foo')
+  expect(result).toBe('foo')
 })
