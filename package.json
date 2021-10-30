@@ -26,7 +26,7 @@
     "./package.json": "./package.json"
   },
   "scripts": {
-    "test": "tsm node_modules/uvu/bin.js test test/index.test.ts && eslint . && check-dts && size-limit && yaspeller *.md"
+    "test": "tsm node_modules/uvu/bin.js test \\.test\\.ts$ && eslint . && check-dts && size-limit && yaspeller *.md"
   },
   "devDependencies": {
     "@babel/core": "^7.16.0",
