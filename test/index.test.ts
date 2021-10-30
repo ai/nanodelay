@@ -15,3 +15,6 @@ test('resolves with specific result', async () => {
   let result = await delay(1, 'foo')
   equal(result, 'foo')
 })
+
+test.run()
+
