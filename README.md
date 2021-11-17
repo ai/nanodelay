@@ -3,7 +3,7 @@
 A tiny `Promise` wrapper around `setTimeout` for JavaScript.
 Returns a `Promise` and resolve it after a specific amount of time.
 
-* Only **40 bytes** (minified and gzipped),
+* Only **37 bytes** (minified and gzipped),
   10 times smaller than [`delay`] library.
 * Has good **ES modules** and **TypeScript** support.
 
