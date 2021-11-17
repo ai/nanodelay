@@ -748,10 +748,10 @@ charenc@0.0.2:
   resolved "https://registry.yarnpkg.com/charenc/-/charenc-0.0.2.tgz#c0a1d2f3a7092e03774bfa83f14c0fc5790a8667"
   integrity sha1-wKHS86cJLgN3S/qD8UwPxXkKhmc=
 
-check-dts@^0.6.3:
-  version "0.6.3"
-  resolved "https://registry.yarnpkg.com/check-dts/-/check-dts-0.6.3.tgz#c06f625c97131ce37c875998b2514ef888b265ea"
-  integrity sha512-whRqACQPsdv+DP7shkdK3u6boMzDagz+VqdIwAcfYQFd8NDQfMhPnsLMK/sAWm2QK0S1FKJQZZHN5zH/CRW/FA==
+check-dts@^0.6.4:
+  version "0.6.4"
+  resolved "https://registry.yarnpkg.com/check-dts/-/check-dts-0.6.4.tgz#51cdbdc1abdbddf77f4e0f2ad9ccbe3c50984700"
+  integrity sha512-bxF8yPtThneecmBr+f4Q1EcDGFhiD2GjOnHscmDDH1vBDaGRTLKmHHjNiM6/9wbknRxiNoEPjr/mvaMtOPCz2g==
   dependencies:
     fast-glob "^3.2.7"
     nanospinner "^0.4.0"
