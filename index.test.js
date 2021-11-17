@@ -1,7 +1,7 @@
 import { test } from 'uvu'
 import { equal, ok } from 'uvu/assert'
 
-import { delay } from '../index.js'
+import { delay } from './index.js'
 
 test('resolves after some time', async () => {
   let now = Date.now()
@@ -17,4 +17,3 @@ test('resolves with specific result', async () => {
 })
 
 test.run()
-

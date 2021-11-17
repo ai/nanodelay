@@ -528,7 +528,7 @@ esbuild-windows-arm64@0.13.14:
   resolved "https://registry.yarnpkg.com/esbuild-windows-arm64/-/esbuild-windows-arm64-0.13.14.tgz#91a8dad35ab2c4dd27cd83860742955b25a354d7"
   integrity sha512-KP8FHVlWGhM7nzYtURsGnskXb/cBCPTfj0gOKfjKq2tHtYnhDZywsUG57nk7TKhhK0fL11LcejHG3LRW9RF/9A==
 
-esbuild@^0.13.14, esbuild@^0.13.4:
+esbuild@^0.13.14:
   version "0.13.14"
   resolved "https://registry.yarnpkg.com/esbuild/-/esbuild-0.13.14.tgz#98a3f7f42809abdc2b57c84565d0f713382dc1a5"
   integrity sha512-xu4D+1ji9x53ocuomcY+KOrwAnWzhBu/wTEjpdgZ8I1c8i5vboYIeigMdzgY1UowYBKa2vZgVgUB32bu7gkxeg==
@@ -1684,13 +1684,6 @@ tsconfig-paths@^3.11.0:
     minimist "^1.2.0"
     strip-bom "^3.0.0"
 
-tsm@^2.1.4:
-  version "2.1.4"
-  resolved "https://registry.yarnpkg.com/tsm/-/tsm-2.1.4.tgz#a93d012c4d96b03bbd9b6a974a9f94c581fab460"
-  integrity sha512-gz1zckplzOzHdiY1HVVUoH8bl2eWxbU6uJraB31w1NQ+/kQkjix3ldYHBnWaoNnOL9q8ruS+E2Wckdcw56DzrA==
-  dependencies:
-    esbuild "^0.13.4"
-
 type-check@^0.4.0, type-check@~0.4.0:
   version "0.4.0"
   resolved "https://registry.yarnpkg.com/type-check/-/type-check-0.4.0.tgz#07b8203bfa7056c0657050e3ccd2c37730bab8f1"
@@ -1702,11 +1695,6 @@ type-fest@^0.20.2:
   version "0.20.2"
   resolved "https://registry.yarnpkg.com/type-fest/-/type-fest-0.20.2.tgz#1bf207f4b28f91583666cb5fbd327887301cd5f4"
   integrity sha512-Ne+eE4r0/iWnpAxD852z3A+N0Bt5RN//NjJwRd2VFHEmrywxf5vsZlh4R6lixl6B+wz/8d+maTSAkN1FIkI3LQ==
-
-typescript@^4.5.2:
-  version "4.5.2"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.5.2.tgz#8ac1fba9f52256fdb06fb89e4122fa6a346c2998"
-  integrity sha512-5BlMof9H1yGt0P8/WF+wPNw6GfctgGjXp5hkblpyT+8rkASSmkUKMXrxR0Xg8ThVCi/JnHQiKXeBaEwCeQwMFw==
 
 unbox-primitive@^1.0.1:
   version "1.0.1"

@@ -2,6 +2,5 @@ node_modules/
 yarn-error.log
 yarn.lock
 
-test/
-tsconfig.json
+*.test.*
 coverage/
