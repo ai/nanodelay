@@ -31,7 +31,7 @@
   },
   "devDependencies": {
     "@logux/eslint-config": "^46.1.0",
-    "@size-limit/preset-small-lib": "^7.0.0",
+    "@size-limit/preset-small-lib": "^7.0.1",
     "c8": "^7.10.0",
     "check-dts": "^0.6.4",
     "clean-publish": "^3.4.3",
@@ -41,7 +41,7 @@
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-prefer-let": "^3.0.1",
     "eslint-plugin-promise": "^5.1.1",
-    "size-limit": "^7.0.0",
+    "size-limit": "^7.0.1",
     "uvu": "^0.5.2"
   },
   "c8": {
