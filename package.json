@@ -27,7 +27,7 @@
   },
   "scripts": {
     "unit": "node ./index.test.js",
-    "test": "c8 yarn unit && eslint . && size-limit"
+    "test": "c8 pnpm unit && eslint . && size-limit"
   },
   "devDependencies": {
     "@logux/eslint-config": "^46.1.1",
