@@ -49,6 +49,7 @@
     "exclude": [
       "**/*.test.*"
     ],
+    "reporter": "lcov",
     "lines": 100,
     "check-coverage": true
   },
