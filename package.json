@@ -30,10 +30,10 @@
     "test": "c8 pnpm unit && eslint . && size-limit"
   },
   "devDependencies": {
-    "@logux/eslint-config": "^47.0.0",
+    "@logux/eslint-config": "^47.2.0",
     "@size-limit/preset-small-lib": "^7.0.8",
     "c8": "^7.11.2",
-    "check-dts": "^0.6.6",
+    "check-dts": "^0.6.7",
     "clean-publish": "^4.0.0",
     "eslint": "^8.14.0",
     "eslint-config-standard": "^17.0.0",
